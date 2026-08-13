@@ -62,3 +62,12 @@ evaluation/eval_out
 
 *.json
 *.bin
+
+# env
+envs
+
+# bert
+bert
+
+# siglip
+siglip-base-patch16-224

@@ -1,37 +1,11 @@
-<div align="center">
 
-<p align="center">
-  <img src="assets/logo.png" width="20%"/>
-</p>
+# Navila-W
 
-# NaVILA: Legged Robot Vision-Language-Action Model for Navigation (RSS'25)
-
-[![website](https://img.shields.io/badge/website-6DE1D2?style=for-the-badge&logo=safari&labelColor=555555)](https://navila-bot.github.io/)
-[![Arxiv](https://img.shields.io/badge/Arxiv-F75A5A?style=for-the-badge&logo=arxiv&labelColor=555555)](https://arxiv.org/abs/2412.04453)
-[![Huggingface](https://img.shields.io/badge/Huggingface-FFD63A?style=for-the-badge&logo=huggingface&labelColor=555555)](https://huggingface.co/collections/a8cheng/navila-legged-robot-vision-language-action-model-for-naviga-67cfc82b83017babdcefd4ad)
-[![Locomotion Code](https://img.shields.io/badge/Locomotion%20Code%20-FFA955?style=for-the-badge&logo=github&labelColor=555555)](https://github.com/yang-zj1026/legged-loco)
-
- 
-<p align="center">
-  <img src="assets/teaser.gif" width="600">
-</p>
-
-</div>
+## NaVILA: Legged Robot Vision-Language-Action Model for Navigation (RSS'25)
 
 ## 💡 Introduction
 
 NaVILA is a two-level framework that combines VLAs with locomotion skills for navigation. It generates high-level language-based commands, while a real-time locomotion policy ensures obstacle avoidance.
-
-<p align="center">
-  <img src="assets/method.png" width="600">
-</p>
-
-
-## TODO
-- [x] Release mode/weight/evaluation.
-- [x] Release training code. (around June 30th)
-- [x] Release YouTube Human Touring dataset. (around June 30th)
-- [x] Release Isaac Sim evaluation, please see [here](https://github.com/yang-zj1026/NaVILA-Bench).
 
 ## 🚀 Training
 ### Installation
@@ -46,9 +20,7 @@ Optional: If you plan to use TensorBoard for logging, install `tensorboardX` via
 For general VQA datasets like `video_chatgpt`, `sharegpt_video`, `sharegpt4v_sft`, please follow the data preparation instructions in [NVILA](https://github.com/NVlabs/VILA).
 We provide annotations for `envdrop`, `scanqa`, `r2r`, `rxr`, and `human` on [Hugging Face](https://huggingface.co/datasets/a8cheng/NaVILA-Dataset).
 Please download the repo and extract the `tar.gz` files in their respective subfolders. 
-<p align="center">
-<img src="assets/human_touring.gif" width="600">
-</p>
+
 
 * **YouTube Human Touring:**  
 Due to copyright restrictions, raw videos/images are not released. We provide **[video IDs](https://huggingface.co/datasets/a8cheng/NaVILA-Dataset/blob/main/Human/video_ids.txt)** and **annotations**. You can download the videos using `yt-dlp` and extract frames using: `scripts/extract_rawframes.py`
@@ -196,9 +168,7 @@ Examples:
 ```bash
 ./eval_out/CKPT_NAME/VLN-CE-v1/val_unseen/videos
 ```
-<p align="center">
-  <img src="assets/sample.gif" width="600">
-</p>
+
 4. Aggregate results and view the scores
 
 ```bash
